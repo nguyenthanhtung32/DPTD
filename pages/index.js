@@ -606,7 +606,7 @@ function Home() {
             </Carousel>
           </div>
           <div className="w-1/3">
-            <Carousel
+          <Carousel
               autoplay
               arrows
               prevArrow={<CustomArrow direction="prev" />}
@@ -620,11 +620,11 @@ function Home() {
                       {jobDescriptions2[key].title}
                     </h3>
                     <p className="text-2xl font-medium text-white">
-                      {key === "VIPHost"
-                        ? "Lễ tân VIP"
-                        : key === "OperationManager"
-                        ? "Quản lí vận hành"
-                        : "Giám sát tầng"}
+                      {key === "Dealer"
+                        ? "Nhân viên chia bài"
+                        : key === "Security"
+                        ? "Nhân viên an ninh"
+                        : "Giám sát thu ngân"}
                     </p>
                   </div>
                   <ul className="mt-4 space-y-2 px-10">
@@ -650,8 +650,9 @@ function Home() {
                       </span>
                     </li>
                   </ul>
+
                   <button
-                    className="mt-4 py-2 px-4 ml-10 rounded-full border"
+                    className="my-4 py-2 px-4 ml-10 rounded-full border"
                     onClick={() => handleJobClick(jobDescriptions2[key])}
                   >
                     Xem chi tiết
