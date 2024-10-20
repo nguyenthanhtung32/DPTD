@@ -29,7 +29,7 @@ function Header() {
           </div>
           <div className="flex items-center text-sm md:text-base mt-2 md:mt-0 md:ml-4">
             <Mail className="mr-2 text-yellow" />
-            <span>Email: hr@dreampokerdanang.com</span>
+            <span>Email: hrbp.dreampokerdanang@gmail.com</span>
           </div>
         </div>
       </div>

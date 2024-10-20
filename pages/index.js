@@ -310,7 +310,7 @@ function Home() {
           ))}
         </div>
       </div>
-      <div id="about-us" className="py-8">
+      <div id="about-us" className="py-8 px-4 md:px-0 mt-32 md:mt-0">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:w-3/4">
@@ -321,11 +321,11 @@ function Home() {
                   className="w-full h-auto"
                 />
               </div>
-              <div className="bg-white p-4 shadow-lg transform translate-y-10">
+              <div className="bg-white p-4 shadow-lg transform md:translate-y-10">
                 <img
                   src="/img/TRED-2.jpg"
                   alt="Poker players at a table"
-                  className="w-full h-auto "
+                  className="w-full h-auto"
                 />
               </div>
               <div className="bg-white p-4 shadow-lg">
@@ -338,7 +338,7 @@ function Home() {
                   You have the power to determine your income
                 </p>
               </div>
-              <div className="bg-white p-4 shadow-lg transform translate-y-10">
+              <div className="bg-white p-4 shadow-lg transform md:translate-y-10">
                 <img
                   src="/img/TRED-4.jpg"
                   alt="Poker tables in a room"
@@ -346,17 +346,19 @@ function Home() {
                 />
               </div>
             </div>
-            <div className="md:w-3/4 w-full md:pl-8 mt-20 md:mt-2">
-              <div className="flex flex-col items-center">
-                <h1 className="text-4xl font-bold text-gray-800 mr-20">
+
+            <div className="md:w-3/4 w-full md:pl-8 mt-5">
+              <div className="flex flex-col justify-center items-center container">
+                <h1 className="text-3xl md:text-4xl font-bold text-left w-full">
                   VISION
                 </h1>
-                <h2 className="text-2xl font-bold text-gray-600 mt-2 ml-20">
-                  & MISSION
-                </h2>
+                <h2 className="text-xl font-bold text-center mt-1">&</h2>
+                <h3 className="text-3xl md:text-4xl font-bold text-right w-full">
+                  MISSION
+                </h3>
               </div>
-              <div className="container mt-4">
-                <p className="text-justify leading-normal text-gray">
+              <div className="mt-4">
+                <p className="text-justify leading-normal text-gray-700">
                   Dream Poker Da Nang Club aims to create a healthy and
                   professional playing environment for all poker enthusiasts. We
                   offer world-class tournament structures, a top-notch
@@ -366,7 +368,7 @@ function Home() {
                   players in Vietnam and create a platform for international
                   players.
                 </p>
-                <p className="text-justify leading-normal text-gray mt-4">
+                <p className="text-justify leading-normal text-gray-700 mt-4">
                   With our Slogan 'Nothing is impossible', we are committed to
                   pushing the boundaries of poker entertainment. Our mission is
                   to deliver unprecedented experiences that align with global
@@ -377,6 +379,7 @@ function Home() {
           </div>
         </div>
       </div>
+
       <div
         id="section"
         className="max-w-7xl mx-auto my-10 p-6 bg-white rounded-lg shadow-2xl"
@@ -430,21 +433,20 @@ function Home() {
           </div>
         </div>
         <div className="mt-8 bg-darkblue text-white p-6 rounded-lg">
-          <div className="flex items-start justify-between">
-            <div className="flex-shrink-0"></div>
-            <div className="mr-4">
+          <div className="flex flex-col md:flex-row items-start justify-between">
+            <div className="w-full md:w-auto mr-4 mb-4 md:mb-0">
               <img
                 src="/img/TRED-3.jpg"
                 alt="Working environment at Dream Poker Da Nang"
-                className="rounded-lg shadow-lg w-96"
+                className="rounded-lg shadow-lg w-full md:w-96"
               />
             </div>
-            <div className="border border-white rounded-full p-1 mt-10 ml-5">
+            <div className="border border-white rounded-full p-1 mt-4 md:mt-10 ml-0 md:ml-5">
               <div className="w-12 h-12 bg-yellow text-white flex items-center justify-center rounded-full text-xl font-bold">
                 02
               </div>
             </div>
-            <div className="ml-4 flex-grow mt-10">
+            <div className="ml-0 md:ml-4 flex-grow mt-4 md:mt-10">
               <h2 className="text-xl font-bold">Working environment</h2>
               <ul className="mt-2 space-y-2">
                 <li>
@@ -458,75 +460,74 @@ function Home() {
                   <CheckCircleOutlined className="text-yellow mr-2" />
                   High potential for career growth
                 </li>
-                <li className="ml-6"> Cơ hội thăng tiến cao trong công việc</li>
+                <li className="ml-6">Cơ hội thăng tiến cao trong công việc</li>
               </ul>
             </div>
           </div>
         </div>
 
         <div className="mt-8 bg-darkblue text-white p-6 rounded-lg">
-          <div className="flex items-start">
-            <div className="flex-shrink-0">
-              <div className="flex-shrink-0">
-                <div className="border border-white rounded-full p-1">
-                  <div className="w-12 h-12 bg-yellow text-white flex items-center justify-center rounded-full text-xl font-bold">
-                    03
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="ml-4 flex-grow">
-              <h2 className="text-xl font-bold">BENEFITS</h2>
-              <ul className="mt-2 space-y-2 text-justify">
-                <div className="flex">
-                  <CheckCircleOutlined className="text-yellow mr-2" />
-                  <li>Excellent career advancement opportunities</li>
-                </div>
-                <li className="ml-6">Cơ hội thăng tiến cao trong công việc</li>
-                <div className="flex">
-                  <CheckCircleOutlined className="text-yellow mr-2 mb-5" />
-                  <li>
-                    Employees are eligible for salary increases based on their
-                    performance and the company's performance.
-                  </li>
-                </div>
-                <li className="ml-6">
-                  Chế độ nâng lương: được xem xét và thỏa thuận điểm đánh giá
-                  nhân viên theo quy định của Công ty.
-                </li>
-                <div className="flex">
-                  <CheckCircleOutlined className="text-yellow mr-2 mb-5" />
-                  <li>
-                    Employees are enrolled in social insurance, health
-                    insurance, and unemployment insurance in accordance with the
-                    Labor Code.
-                  </li>
-                </div>
-                <li className="ml-6">
-                  Tham gia BHXH, BHYT, BHTN theo Luật Lao động
-                </li>
-                <div className="flex">
-                  <CheckCircleOutlined className="text-yellow mr-2" />
-                  <li>
-                    Attractive benefits package including performance-based
-                    bonuses.
-                  </li>
-                </div>
-                <li className="ml-6">
-                  Các chế độ phúc lợi: Thưởng, các chế độ phúc lợi khác theo quy
-                  định công ty
-                </li>
-              </ul>
-            </div>
-            <div className="ml-4 mt-10">
-              <img
-                src="/img/TRED-6.jpg"
-                alt="Benefits at Dream Poker Da Nang"
-                className="rounded-lg shadow-lg"
-              />
-            </div>
-          </div>
+  <div className="flex flex-col md:flex-row items-start">
+    <div className="flex-shrink-0 flex justify-start w-full md:w-auto mb-4 md:mb-0">
+      <div className="border border-white rounded-full p-1">
+        <div className="w-12 h-12 bg-yellow text-white flex items-center justify-center rounded-full text-xl font-bold">
+          03
         </div>
+      </div>
+    </div>
+    <div className="ml-0 md:ml-4 flex-grow">
+      <h2 className="text-xl font-bold">BENEFITS</h2>
+      <ul className="mt-2 space-y-2 text-justify">
+        <div className="flex">
+          <CheckCircleOutlined className="text-yellow mr-2" />
+          <li>Excellent career advancement opportunities</li>
+        </div>
+        <li className="ml-6">Cơ hội thăng tiến cao trong công việc</li>
+        <div className="flex">
+          <CheckCircleOutlined className="text-yellow mr-2 mb-5" />
+          <li>
+            Employees are eligible for salary increases based on their
+            performance and the company's performance.
+          </li>
+        </div>
+        <li className="ml-6">
+          Chế độ nâng lương: được xem xét và thỏa thuận điểm đánh giá
+          nhân viên theo quy định của Công ty.
+        </li>
+        <div className="flex">
+          <CheckCircleOutlined className="text-yellow mr-2 mb-5" />
+          <li>
+            Employees are enrolled in social insurance, health
+            insurance, and unemployment insurance in accordance with the
+            Labor Code.
+          </li>
+        </div>
+        <li className="ml-6">
+          Tham gia BHXH, BHYT, BHTN theo Luật Lao động
+        </li>
+        <div className="flex">
+          <CheckCircleOutlined className="text-yellow mr-2" />
+          <li>
+            Attractive benefits package including performance-based
+            bonuses.
+          </li>
+        </div>
+        <li className="ml-6">
+          Các chế độ phúc lợi: Thưởng, các chế độ phúc lợi khác theo quy
+          định công ty
+        </li>
+      </ul>
+    </div>
+    <div className="w-full md:w-auto ml-0 md:ml-4 mt-4 md:mt-10">
+      <img
+        src="/img/TRED-6.jpg"
+        alt="Benefits at Dream Poker Da Nang"
+        className="rounded-lg shadow-lg w-full md:w-auto"
+      />
+    </div>
+  </div>
+</div>
+
 
         <div className="mt-8 text-center">
           <h2 className="text-2xl font-bold text-blue-600">
@@ -543,13 +544,12 @@ function Home() {
       </div>
       <div id="recruitment" className="container mx-auto p-4">
         <div className="overflow-hidden">
-          <h1 className="text-4xl mb-10 font-bold whitespace-nowrap animate-slide text-center">
+          <h1 className="text-2xl md:text-4xl mb-10 font-bold whitespace-nowrap animate-slide text-center">
             VỊ TRÍ ĐANG TUYỂN DỤNG
           </h1>
         </div>
-
-        <div className="flex justify-center">
-          <div className="w-1/3">
+        <div className="flex flex-col md:flex-row justify-center">
+          <div className="w-full md:w-1/3 mb-4 md:mb-0">
             <Carousel
               autoplay
               arrows
@@ -605,8 +605,8 @@ function Home() {
               ))}
             </Carousel>
           </div>
-          <div className="w-1/3">
-          <Carousel
+          <div className="w-full md:w-1/3 mb-4 md:mb-0">
+            <Carousel
               autoplay
               arrows
               prevArrow={<CustomArrow direction="prev" />}
@@ -660,50 +660,70 @@ function Home() {
                 </div>
               ))}
             </Carousel>
-            <div>
-              <Modal
-                title={null}
-                open={isModalVisible}
-                onOk={handleOk}
-                onCancel={handleOk}
-                footer={null}
-                width={800}
-                bodyStyle={{
-                  backgroundColor: "#5166c7",
-                  maxHeight: "600px",
-                  overflowY: "auto",
-                  borderRadius: "8px",
+          </div>
+
+          <div>
+            <Modal
+              title={null}
+              open={isModalVisible}
+              onOk={handleOk}
+              onCancel={handleOk}
+              footer={null}
+              width={800}
+              bodyStyle={{
+                backgroundColor: "#5166c7",
+                maxHeight: "600px",
+                overflowY: "auto",
+                borderRadius: "8px",
+              }}
+            >
+              <div
+                className="text-center text-white bg-yellow"
+                style={{
+                  width: "50%",
+                  margin: "0 auto",
+                  borderBottomLeftRadius: "8px",
+                  borderBottomRightRadius: "8px",
+                  padding: "16px 0",
                 }}
               >
-                <div
-                  className="text-center text-white bg-yellow"
-                  style={{
-                    width: "50%",
-                    margin: "0 auto",
-                    borderBottomLeftRadius: "8px",
-                    borderBottomRightRadius: "8px",
-                    padding: "16px 0",
-                  }}
-                >
-                  <div className="flex flex-col items-center">
-                    <div className="text-3xl">{selectedJob?.title}</div>
-                    <div className="text-xl">
-                      {selectedJob?.titleVietnamese}
-                    </div>
-                  </div>
+                <div className="flex flex-col items-center">
+                  <div className="text-3xl">{selectedJob?.title}</div>
+                  <div className="text-xl">{selectedJob?.titleVietnamese}</div>
                 </div>
+              </div>
 
-                {selectedJob && (
-                  <div className="mt-4">
-                    {selectedJob.summary && selectedJob.summary.length > 0 && (
+              {selectedJob && (
+                <div className="mt-4">
+                  {selectedJob.summary && selectedJob.summary.length > 0 && (
+                    <>
+                      <h4 className="font-semibold">
+                        <u className="text-yellow ml-5 text-xl">
+                          Job Summary: Tóm tắt công việc
+                        </u>
+                      </h4>
+                      <ul className="list-none pl-5 mt-2">
+                        {selectedJob.summary.map((item, index) => (
+                          <li
+                            className="text-white text-justify mx-5 leading-relaxed"
+                            key={index}
+                          >
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </>
+                  )}
+                  {selectedJob.responsibilities &&
+                    selectedJob.responsibilities.length > 0 && (
                       <>
                         <h4 className="font-semibold">
                           <u className="text-yellow ml-5 text-xl">
-                            Job Summary: Tóm tắt công việc
+                            Key Responsibilities: Trách nhiệm chính
                           </u>
                         </h4>
                         <ul className="list-none pl-5 mt-2">
-                          {selectedJob.summary.map((item, index) => (
+                          {selectedJob.responsibilities.map((item, index) => (
                             <li
                               className="text-white text-justify mx-5 leading-relaxed"
                               key={index}
@@ -714,37 +734,16 @@ function Home() {
                         </ul>
                       </>
                     )}
-                    {selectedJob.responsibilities &&
-                      selectedJob.responsibilities.length > 0 && (
-                        <>
-                          <h4 className="font-semibold">
-                            <u className="text-yellow ml-5 text-xl">
-                              Key Responsibilities: Trách nhiệm chính
-                            </u>
-                          </h4>
-                          <ul className="list-none pl-5 mt-2">
-                            {selectedJob.responsibilities.map((item, index) => (
-                              <li
-                                className="text-white text-justify mx-5 leading-relaxed"
-                                key={index}
-                              >
-                                {item}
-                              </li>
-                            ))}
-                          </ul>
-                        </>
-                      )}
-                  </div>
-                )}
-              </Modal>
-            </div>
+                </div>
+              )}
+            </Modal>
           </div>
         </div>
 
-        <div className="flex justify-center mt-20">
-          <div className="bg-darkblue md:w-9/12 w-auto p-8 rounded-lg shadow-lg flex">
-            <div className="w-full md:w-1/3 rounded-lg transform -translate-y-20 bg-purple p-8">
-              <h2 className="text-white text-3xl font-bold mb-4 text-center ">
+        <div className="flex justify-center mt-20 px-4">
+          <div className="bg-darkblue w-full md:w-9/12 p-4 md:p-8 rounded-lg shadow-lg flex flex-col md:flex-row">
+            <div className="w-full md:w-1/3 rounded-lg transform -translate-y-10 md:-translate-y-20 bg-purple p-4 md:p-8">
+              <h2 className="text-white text-2xl md:text-3xl font-bold mb-4 text-center">
                 ỨNG TUYỂN ONLINE:
               </h2>
               <p className="text-white mb-4">
@@ -819,11 +818,12 @@ function Home() {
                 </div>
               )}
             </div>
-            <div className="w-full md:w-1/2 ml-5">
-              <h2 className="text-4xl font-bold mb-4">
-                <span className="text-yellow">HƯỚNG DẪN</span>
-                <br />
-                <span className="text-white ml-20">NỘP HỒ SƠ</span>
+            <div className="w-full md:w-1/2 mt-8 md:mt-0 md:ml-5">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+                <div className="flex flex-col items-center">
+                  <span className="text-yellow self-start">HƯỚNG DẪN</span>
+                  <span className="text-white self-end">NỘP HỒ SƠ</span>
+                </div>
               </h2>
               <p className="text-yellow mb-4">
                 Ứng viên có thể chọn 01 trong 03 hình thức nộp đơn ứng tuyển
@@ -837,7 +837,8 @@ function Home() {
                 </li>
                 <li>
                   <CheckCircleOutlined className="text-yellow mr-2" />
-                  Nộp CV ứng tuyển qua địa chỉ email: hr@dreampokerdanang.com
+                  Nộp CV ứng tuyển qua địa chỉ email:
+                  hrbp.dreampokerdanang@gmail.com
                 </li>
                 <li>
                   <CheckCircleOutlined className="text-yellow mr-2" />
