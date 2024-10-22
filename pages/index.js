@@ -467,67 +467,66 @@ function Home() {
         </div>
 
         <div className="mt-8 bg-darkblue text-white p-6 rounded-lg">
-  <div className="flex flex-col md:flex-row items-start">
-    <div className="flex-shrink-0 flex justify-start w-full md:w-auto mb-4 md:mb-0">
-      <div className="border border-white rounded-full p-1">
-        <div className="w-12 h-12 bg-yellow text-white flex items-center justify-center rounded-full text-xl font-bold">
-          03
+          <div className="flex flex-col md:flex-row items-start">
+            <div className="flex-shrink-0 flex justify-start w-full md:w-auto mb-4 md:mb-0">
+              <div className="border border-white rounded-full p-1">
+                <div className="w-12 h-12 bg-yellow text-white flex items-center justify-center rounded-full text-xl font-bold">
+                  03
+                </div>
+              </div>
+            </div>
+            <div className="ml-0 md:ml-4 flex-grow">
+              <h2 className="text-xl font-bold">BENEFITS</h2>
+              <ul className="mt-2 space-y-2 text-justify">
+                <div className="flex">
+                  <CheckCircleOutlined className="text-yellow mr-2" />
+                  <li>Excellent career advancement opportunities</li>
+                </div>
+                <li className="ml-6">Cơ hội thăng tiến cao trong công việc</li>
+                <div className="flex">
+                  <CheckCircleOutlined className="text-yellow mr-2 mb-5" />
+                  <li>
+                    Employees are eligible for salary increases based on their
+                    performance and the company's performance.
+                  </li>
+                </div>
+                <li className="ml-6">
+                  Chế độ nâng lương: được xem xét và thỏa thuận điểm đánh giá
+                  nhân viên theo quy định của Công ty.
+                </li>
+                <div className="flex">
+                  <CheckCircleOutlined className="text-yellow mr-2 mb-5" />
+                  <li>
+                    Employees are enrolled in social insurance, health
+                    insurance, and unemployment insurance in accordance with the
+                    Labor Code.
+                  </li>
+                </div>
+                <li className="ml-6">
+                  Tham gia BHXH, BHYT, BHTN theo Luật Lao động
+                </li>
+                <div className="flex">
+                  <CheckCircleOutlined className="text-yellow mr-2" />
+                  <li>
+                    Attractive benefits package including performance-based
+                    bonuses.
+                  </li>
+                </div>
+                <li className="ml-6">
+                  Các chế độ phúc lợi: Thưởng, các chế độ phúc lợi khác theo quy
+                  định công ty
+                </li>
+              </ul>
+            </div>
+            <div className="w-full md:w-auto ml-0 md:ml-4 mt-4 md:mt-10">
+              <img
+                src="/img/TRED-6.jpg"
+                alt="Benefits at Dream Poker Da Nang"
+                className="rounded-lg shadow-lg w-full md:w-auto"
+              />
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div className="ml-0 md:ml-4 flex-grow">
-      <h2 className="text-xl font-bold">BENEFITS</h2>
-      <ul className="mt-2 space-y-2 text-justify">
-        <div className="flex">
-          <CheckCircleOutlined className="text-yellow mr-2" />
-          <li>Excellent career advancement opportunities</li>
-        </div>
-        <li className="ml-6">Cơ hội thăng tiến cao trong công việc</li>
-        <div className="flex">
-          <CheckCircleOutlined className="text-yellow mr-2 mb-5" />
-          <li>
-            Employees are eligible for salary increases based on their
-            performance and the company's performance.
-          </li>
-        </div>
-        <li className="ml-6">
-          Chế độ nâng lương: được xem xét và thỏa thuận điểm đánh giá
-          nhân viên theo quy định của Công ty.
-        </li>
-        <div className="flex">
-          <CheckCircleOutlined className="text-yellow mr-2 mb-5" />
-          <li>
-            Employees are enrolled in social insurance, health
-            insurance, and unemployment insurance in accordance with the
-            Labor Code.
-          </li>
-        </div>
-        <li className="ml-6">
-          Tham gia BHXH, BHYT, BHTN theo Luật Lao động
-        </li>
-        <div className="flex">
-          <CheckCircleOutlined className="text-yellow mr-2" />
-          <li>
-            Attractive benefits package including performance-based
-            bonuses.
-          </li>
-        </div>
-        <li className="ml-6">
-          Các chế độ phúc lợi: Thưởng, các chế độ phúc lợi khác theo quy
-          định công ty
-        </li>
-      </ul>
-    </div>
-    <div className="w-full md:w-auto ml-0 md:ml-4 mt-4 md:mt-10">
-      <img
-        src="/img/TRED-6.jpg"
-        alt="Benefits at Dream Poker Da Nang"
-        className="rounded-lg shadow-lg w-full md:w-auto"
-      />
-    </div>
-  </div>
-</div>
-
 
         <div className="mt-8 text-center">
           <h2 className="text-2xl font-bold text-blue-600">
@@ -559,17 +558,11 @@ function Home() {
             >
               {Object.keys(jobDescriptions1).map((key) => (
                 <div key={key} className="rounded-lg shadow-md">
-                  <div className="bg-gradient-to-b from-purple to-purplelight text-center border-b">
+                  <div className="bg-gradient-to-b from-purple to-purplelight text-center">
                     <h3 className="text-3xl font-bold text-white">
                       {jobDescriptions1[key].title}
+                      <div className="h-8" />
                     </h3>
-                    <p className="text-2xl font-medium text-white">
-                      {key === "Dealer"
-                        ? "Nhân viên chia bài"
-                        : key === "Security"
-                        ? "Nhân viên an ninh"
-                        : "Giám sát thu ngân"}
-                    </p>
                   </div>
                   <ul className="mt-4 space-y-2 px-10">
                     <li>
@@ -615,17 +608,11 @@ function Home() {
             >
               {Object.keys(jobDescriptions2).map((key) => (
                 <div key={key} className="rounded-lg shadow-md">
-                  <div className="bg-gradient-to-b from-purple to-purplelight text-center border-b">
+                  <div className="bg-gradient-to-b from-purple to-purplelight text-center">
                     <h3 className="text-3xl font-bold text-white">
                       {jobDescriptions2[key].title}
                     </h3>
-                    <p className="text-2xl font-medium text-white">
-                      {key === "Dealer"
-                        ? "Nhân viên chia bài"
-                        : key === "Security"
-                        ? "Nhân viên an ninh"
-                        : "Giám sát thu ngân"}
-                    </p>
+                    <div className="h-8" />
                   </div>
                   <ul className="mt-4 space-y-2 px-10">
                     <li>
